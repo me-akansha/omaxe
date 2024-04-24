@@ -1,0 +1,748 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+    padding: 5px;
+  }
+  
+  .logo img {
+    max-height: 80px;
+  }
+  
+  /*navigation */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px; 
+    font-family: Arial, sans-serif;
+    text-transform: uppercase; 
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: blue;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    transition: width 0.3s ease;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  @media only screen and (max-width: 768px) {
+    nav ul {
+      text-align: center;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    nav ul li:first-child {
+      margin-top: 0;
+    }
+  }
+/* Video section */
+.video-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+}
+
+.content h2 {
+  font-weight: bold;
+  font-size: 32px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: darkblue;
+}
+
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 5% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  text-align: center;
+}
+
+.modal-title {
+  margin-bottom: 20px;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.logo {
+  max-width: 90px; /* Set maximum width for the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Submit Button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* Form Fields */
+.form1 {
+  text-align: left;
+}
+
+.form1 input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Availability Points */
+.availability-points ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.availability-points ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+
+  /* about max estates */
+  .project-section {
+    background-color:  rgb(7, 9, 48); 
+    padding: 20px 20px;
+
+  }
+  
+  .project-section .content1 {
+    max-width: 1100px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: white;
+  }
+  .project-section h2{
+    text-align: center;
+  }
+  
+  .project-section .content1 p {
+    margin-bottom: 20px;
+  }
+
+  /*property section */
+
+  .property-overview {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    color: #333;
+    text-align: center;
+}
+
+.property-overview .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.property-overview h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.property-feature {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(50% - 20px); 
+    margin: 10px; 
+}
+
+.property-feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.property-feature h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.property-feature p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+    .property-feature {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .property-feature {
+        width: 100%;
+    }
+}
+
+/*photo*/
+.photo-gallery {
+  background-color:  rgb(7, 9, 48);
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+}
+
+.photo-gallery .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.photo-gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust min width of photo containers */
+  grid-gap: 20px; /* Add gap between photos */
+}
+
+.photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.photo img {
+  width: 100%;
+  height: 150px; /* Set specific height for uniformity */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photo:hover {
+  transform: translateY(-5px);
+}
+
+.photo:hover img {
+  transform: scale(1.05);
+}
+
+
+/* Amenities */
+.amenities-section {
+  text-align: center;
+  padding: 50px;
+  background-color: white;
+  color: #000;
+}
+
+.amenities-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.amenities-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amenities-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.amenities-list li {
+  margin-right: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.amenities-list li:hover {
+  transform: translateY(-5px);
+}
+
+.amenities-list img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.amenities-list span {
+  font-size: 16px;
+  font-weight: bold;
+}
+/* Media Query for Amenities Section in Mobile */
+@media (max-width: 768px) {
+  .amenities-list ul {
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: center;
+  }
+
+  .amenities-list li {
+      width: 33.33%; 
+      margin-bottom: 20px; 
+      text-align: center; 
+  }
+
+  .amenities-list img {
+      width: 80px; /* Adjust image width */
+      height: auto;
+  }
+
+  .amenities-list span {
+      font-size: 14px; 
+      display: block;
+      margin-top: 5px; 
+  }
+}
+
+
+/* location*/
+.location-advantages {
+  background-color:  rgb(7, 9, 48);
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+}
+
+.location-advantages .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.location-advantages h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.advantages-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* Center content vertically */
+}
+
+.advantages-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  flex: 1;
+}
+
+.advantages-list li {
+  font-size: 1.5rem; /* Increase font size for points */
+  margin-bottom: 20px;
+  line-height: 1.6;
+  position: relative;
+}
+
+.advantages-list li::before {
+  content: "\2022"; /* Bullet character */
+  color: white;
+  font-size: 2rem; /* Increase size of bullet points */
+  position: absolute;
+  left: -30px; /* Adjust position of bullet points */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.image-container {
+  flex: 1;
+  margin-top: 20px; /* Adjust spacing between image and list */
+  max-width: 500px; /* Set maximum width for image */
+}
+
+.image-container img {
+  width: 100%; /* Ensure image fills container width */
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .advantages-container {
+    flex-direction: column;
+    align-items: center; /* Align items in the center for mobile view */
+  }
+
+  .advantages-list, .image-container {
+    flex: none;
+    max-width: 100%; /* Take full width on small screens */
+    text-align: center; /* Center the text for mobile view */
+  }
+
+  .advantages-list {
+    padding-left: 1em; /* Add padding to account for center alignment */
+  }
+
+  .advantages-list li {
+    text-align: left; /* Keep text aligned to the left, more natural for reading */
+    padding-left: 30px; /* Adjust padding for bullet spacing */
+  }
+
+  .advantages-list li::before {
+    left: 10px; /* Adjust bullet position to fit mobile view */
+  }
+}
+
+
+
+
+/* Site & Floor Plans */
+.download-button {
+  background-color: rgb(0, 255, 55);
+}
+.plans-section {
+  text-align: center;
+  padding: 50px;
+  background-color:  rgb(7, 9, 48);
+  color: white;
+}
+
+.plans-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.plans-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+   /* Add position relative for absolute positioning */
+}
+
+.plans-images .overlay-text {
+  position: absolute;
+  top: -10px;
+  left: 100px;
+  background-color: yellow; /* Yellow background color */
+  color: black; /* Black text color */
+  padding: 5px 10px; /* Padding for the box */
+  font-size: 18px;
+}
+
+.plans-images img {
+  width: 300px; /* Adjust image width as needed */
+  height: auto;
+  margin: 0 20px; 
+  filter: blur(2px);
+}
+
+
+/* Media Query for Site & Floor Plans Section in Mobile */
+@media (max-width: 768px) {
+  .plans-images {
+      flex-direction: column;
+      align-items: center; 
+      padding-bottom: 15px;
+  }
+
+  .plans-images img {
+      width: 100%; 
+      max-width: 300px; 
+      height: auto;
+      margin-bottom: 10px; 
+  }
+  .plans-section h2 {
+    font-size: 22px;
+  }
+}
+
+
+
+
+  /* Contact Section */
+.contact {
+    background: linear-gradient(135deg,  rgb(7, 9, 48), white);
+    color: black;
+    padding: 100px 0;
+  }
+  
+  .contact h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    transition: color 0.3s ease;
+  }
+  
+  .contact p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center;
+    transition: color 0.3s ease;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc; /* Add border for input and textarea */
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+    outline: none; /* Remove default outline */
+  }
+  
+  .contact form textarea {
+    resize: vertical;
+  }
+  
+  .contact form button {
+    display: block;
+    width: 105%;
+    padding: 15px; /* Match padding with input fields */
+    height: auto; /* Allow the height to adjust based on content */
+    background: black;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Adjust font size to match input fields */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    outline: none; /* Remove default outline */
+  }
+  
+  .contact form button:hover {
+    background: black;
+    color: white;
+  }
+  
+  
+  .contact:hover h2,
+  .contact:hover p {
+    color: black;
+  }
+  
+  /* Advanced Styling */
+  .contact form input:focus,
+  .contact form textarea:focus {
+    border-color: black; /* Change border color on focus */
+    background-color: rgba(255, 255, 255, 0.2); /* Lighten background on focus */
+  }
+  
+  .contact form input::placeholder,
+  .contact form textarea::placeholder {
+    color: rgb(2, 0, 0); /* Adjust placeholder color */
+  }
+  
+  .contact form button:disabled {
+    background-color: #ccc; /* Disable button background color */
+    cursor: not-allowed; /* Change cursor on disabled state */
+  }
+  
+  .contact form button:disabled:hover {
+    background-color: #ccc; /* Keep the same background color on hover when disabled */
+    color: #333; /* Adjust text color on hover when disabled */
+  }
+  
+  /* disclaimer-section */
+  .disclaimer-section {
+    padding: 20px 0;
+    background-color: rgb(7, 9, 48); /* Dark blue background */
+    color: white; /* White text for readability */
+}
+
+.disclaimer-section .container {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.disclaimer-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.disclaimer-section p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.6; /* Improves readability */
+}
+
+.disclaimer-section button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.disclaimer-section button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+  /* Akansha */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+
