@@ -226,20 +226,20 @@
   /* about max estates */
   .project-section {
     background-color:  rgb(7, 9, 48); 
-    padding: 20px 20px;
+    padding: 40px;
 
   }
   
   .project-section .content1 {
-    max-width: 1100px;
     margin: 0 auto;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 400;
     line-height: 1.6;
     color: white;
   }
   .project-section h2{
     text-align: center;
+    margin-bottom: 20px;
   }
   
   .project-section .content1 p {
@@ -248,73 +248,59 @@
 
   /*property section */
 
-  .property-overview {
-    background-color: #f8f8f8;
-    padding: 40px 0;
-    color: #333;
-    text-align: center;
+.property-overview {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+  color: #333;
+  text-align: center;
 }
 
 .property-overview .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.property-overview h2 {
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-    font-weight: bold;
-}
-
-.features-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .property-feature {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: calc(50% - 20px); 
-    margin: 10px; 
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(50% - 20px); 
+  margin: 10px; 
 }
 
 .property-feature:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .property-feature h3 {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-    color: #555;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #555;
 }
 
 .property-feature p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.6;
-}
-
-@media (max-width: 992px) {
-    .property-feature {
-        width: calc(50% - 20px);
-    }
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
 }
 
 @media (max-width: 768px) {
-    .property-feature {
-        width: 100%;
-    }
+  .property-feature {
+      width: calc(100% - 20px); 
+  }
+  .project-section .content1 p {
+    margin-bottom: 20px;
+    text-align: justify;
+  }
 }
+
 /* banner */
 .full-size-image {
   position: relative;
@@ -514,14 +500,13 @@
 }
 
 .location-advantages .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  margin:  auto;
 }
 
 .location-advantages h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 30px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .advantages-container {
@@ -549,7 +534,7 @@
 .advantages-list li::before {
   content: "\2022"; /* Bullet character */
   color: white;
-  font-size: 2rem; /* Increase size of bullet points */
+  font-size: 1rem; /* Increase size of bullet points */
   position: absolute;
   left: -30px; /* Adjust position of bullet points */
   top: 50%;
@@ -576,21 +561,23 @@
 
   .advantages-list, .image-container {
     flex: none;
-    max-width: 100%; /* Take full width on small screens */
-    text-align: center; /* Center the text for mobile view */
+    max-width: 100%; 
+    text-align: center; 
+    
   }
 
   .advantages-list {
-    padding-left: 1em; /* Add padding to account for center alignment */
+    padding-left: 1em; 
   }
 
   .advantages-list li {
-    text-align: left; /* Keep text aligned to the left, more natural for reading */
-    padding-left: 30px; /* Adjust padding for bullet spacing */
+    text-align: left; 
+    padding-left: 30px; 
+    font-size: 1em;
   }
 
   .advantages-list li::before {
-    left: 10px; /* Adjust bullet position to fit mobile view */
+    left: 10px;
   }
 }
 
@@ -793,7 +780,7 @@
 .disclaimer-section p {
     font-size: 14px;
     margin-bottom: 15px;
-    line-height: 1.6; /* Improves readability */
+    line-height: 1.6; 
 }
 
 .disclaimer-section button {
@@ -836,7 +823,7 @@
 /* calling */
 .call-button {
   position: fixed;
-  bottom: 74%; 
+  bottom: 2%; 
   right: 60px;
   width: 60px;
   height: 60px;
@@ -850,16 +837,23 @@
 
 @media screen and (max-width: 768px) {
   .call-button {
-      right: 20px;
-      bottom: 85%;
-      width: 50px;
-      height: 50px;
+      display: none;
   }
+  .disclaimer-section h3 {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+.disclaimer-section p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 1.6; 
+  text-align: justify;
+}
 }
 /* whatsapp */
 .whatsapp-button {
   position: fixed;
-  bottom: 85%; 
+  bottom: 12%; 
   right: 60px;
   width: 60px;
   height: 60px;
@@ -873,9 +867,113 @@
 
 @media screen and (max-width: 576px) {
   .whatsapp-button {
-      right: 20px;
-      bottom: 75%;
-      width: 50px;
-      height: 50px;
+      display: none;
   }
+}
+.landing-number-box-2 {
+  display: none; /* Hide by default */
+}
+
+@media (max-width: 768px) {
+  .landing-number-box-2 {
+    display: block; /* Show in mobile and tablet views */
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .button:hover {
+    background-color: #f0f0f0;
+  }
+
+  .button-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .button i {
+    font-size: 22px;
+  }
+
+  .whatsapp-button {
+    border: 1px solid green;
+    color: green;
+  }
+
+  .call-now-button {
+    border: 1px solid blue;
+    color: blue;
+  }
+}
+@media (max-width: 768px) {
+
+
+.landing-number-box-2 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  height: 100px; /* Changed height to 100px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it stays above other content */
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.landing-number-box-2 a {
+  text-decoration: none;
+}
+
+.landing-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.landing-button:hover {
+  background-color: #f0f0f0;
+}
+
+.landing-button-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.landing-button i {
+  font-size: 22px;
+}
+
+.landing-whatsapp-button {
+  border: 1px solid green;
+  color: green;
+}
+
+.landing-call-now-button {
+  border: 1px solid blue;
+  color: blue;
+}
 }
