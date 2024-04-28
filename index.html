@@ -354,65 +354,9 @@
       </div>
     </a>
   </div>
-  
-  <!-- <div class="landing-number-box-2">
-    <div class="button-group">
-      <a href="https://api.whatsapp.com/send?phone=+918178593744&text=Hi&utm_source=website+banner" class="button whatsapp-button">
-        <span class="button-text">
-          <i class="fab fa-whatsapp" style="color: green;"></i>
-          Whatsapp
-        </span>
-      </a>
-      <a href="tel:+918178593744" class="call-now-button">
-        <span class="button-text-call">
-          <i class="fas fa-phone-alt" style="color: blue;"></i>
-          Call Now
-        </span>
-      </a>
-    </div>
-  </div> -->
-  
-  <script src="script.js"></script>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-  <!-- code for the sending email using elastic mail 
-<script>
-    function emailSend() {
-      var userName = document.getElementById('name').value;
-      var phone = document.getElementById('phone').value;
-      var email = document.getElementById('email').value;
-  
-      var messageBody = "Name: " + userName + "\nPhone: " + phone + "\nEmail: " + email;
-  
-      Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "tech.propplayers@outlook.com",
-        Password: "12CE8BAAF8F9059A7F6F8046D39889C4BE37",
-        To: 'tech.propplayers@outlook.com',
-        From: 'tech.propplayers@outlook.com',
-        Subject: "New Contact Form Submission",
-        Body: messageBody
-      }).then(
-        function (message) {
-          console.log(message);
-          if (message === 'OK') {
-            swal("Success", "Email sent successfully!", "success");
-            
-          } else {
-            swal("Error", "Failed to send email!", "error");
-            
-          }
-        }
-      );
-    } 
-  </script>
-  -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@2"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
   <script type="text/javascript">
     (function () {
       emailjs.init({
@@ -465,9 +409,6 @@
       }, 120000);
     });
   </script>
-
-
-
 </body>
 
 </html>
